@@ -1,0 +1,27 @@
+{
+  "name": "todo-api",
+  "version": "0.1.0",
+  "description": "ToDo API Task in express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "express-validator": "^6.6.1",
+    "http-errors": "^1.8.0",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.28",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "jasmine": "^3.1.0",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0"
+  }
+}
