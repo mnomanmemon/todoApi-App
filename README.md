@@ -17,8 +17,8 @@ HTTP route prefix : http://localhost:3000/api/
 ### API endpoints summary
 Route      	        | Method | Description
 --------------------|--------|-----------------------
-/auth/signup        | POST   | for login and get the token
-/auth/login         | POST   | for signup
+/auth/signup        | POST   | for signup
+/auth/login         | POST   | for login and get the token
 --------------------|--------|-----------------------
 /todo/items         | GET    | read all items
 /todo/item/:id 	    | GET    | read single item by id
