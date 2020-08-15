@@ -17,6 +17,9 @@ HTTP route prefix : http://localhost:3000/api/
 ### API endpoints summary
 Route      	        | Method | Description
 --------------------|--------|-----------------------
+/auth/signup        | POST   | for login and get the token
+/auth/login         | POST   | for signup
+--------------------|--------|-----------------------
 /todo/items         | GET    | read all items
 /todo/item/:id 	    | GET    | read single item by id
 /todo/item		      | POST   | create item
@@ -28,6 +31,43 @@ Route      	        | Method | Description
 /todoList/item		  | POST   | create item
 /todoList/item/:id 	| PUT    | update item by id
 /todoList/item/:id 	| DELETE | delete item by id
+
+
+### POST http://localhost:3000/api/auth/login
+##### HTTP Request Body Example
+```javascript 
+{
+  "email" : "user@login.com",
+  "password" : "12345678"
+}
+```
+
+##### HTTP Response Body Example
+```javascript
+{
+    "token": "jwtToken",
+    "userName": "user",
+    "email": "user@gmail.com"
+}
+```
+
+### POST http://localhost:3000/api/auth/signup
+##### HTTP Request Body Example
+```javascript 
+{
+  "userName" : "user",
+  "email" : "user@login.com",
+  "password" : "12345678"
+}
+```
+
+##### HTTP Response Body Example
+```javascript
+{
+    "success": true,
+    "msg": 'Successfully Registered.'
+}
+```
 
 ### GET http://localhost:3000/api/todo/items
 ##### HTTP Response Body Example
